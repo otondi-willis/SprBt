@@ -11,6 +11,7 @@ public class Dev {
 //    public Dev(Laptop laptop){
 //        this.laptop = laptop;
 //    }
+    @Autowired
     public void setLaptop(Laptop laptop){
         this.laptop=laptop;
     }
