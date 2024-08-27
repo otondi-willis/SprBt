@@ -5,20 +5,16 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Dev {
-   // @Autowired//field injection
-    Laptop laptop;
+   @Autowired //field injection
+    private Computer comp;
     //Constructor injection
 //    public Dev(Laptop laptop){
 //        this.laptop = laptop;
 //    }
-    @Autowired
-    public void setLaptop(Laptop laptop){
-        this.laptop=laptop;
-    }
 
 
     public void build(){
         System.out.println("working on awesome project");
-        laptop.compile();
+        comp.compile();
     }
 }
