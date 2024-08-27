@@ -5,8 +5,11 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Dev {
-    @Autowired//field injection
+   // @Autowired//field injection
     Laptop laptop;
+    public Dev(Laptop laptop){
+        this.laptop = laptop;
+    }
 
 
     public void build(){
